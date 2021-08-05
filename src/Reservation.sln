@@ -3,7 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.WebApi", "Reservation.WebApi\Reservation.WebApi.csproj", "{09387E4D-3093-4C80-B55F-7E14556945D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservation.WebApi", "Reservation.WebApi\Reservation.WebApi.csproj", "{09387E4D-3093-4C80-B55F-7E14556945D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{590F83E5-1C84-4EAD-9063-95B88D7AA098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Shared.Domain", "Reservation.Shared.Domain\Reservation.Shared.Domain.csproj", "{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Documents", "Reservation.Documents\Reservation.Documents.csproj", "{5301EE55-7CDF-4E6E-AE93-B5B525F170F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Shared.Infrastructure", "Reservation.Shared.Infrastructure\Reservation.Shared.Infrastructure.csproj", "{CADD7721-A901-48C2-A012-1799720D457A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03B354B1-CC11-4710-82F6-2E3D6CDF8CF7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Shared.Application", "Reservation.Shared.Application\Reservation.Shared.Application.csproj", "{F07AEAF3-AA86-4E03-BE91-60158488E8E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3B8C1E15-28AB-417B-97C1-D5100EC84D5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +32,31 @@ Global
 		{09387E4D-3093-4C80-B55F-7E14556945D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09387E4D-3093-4C80-B55F-7E14556945D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09387E4D-3093-4C80-B55F-7E14556945D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5301EE55-7CDF-4E6E-AE93-B5B525F170F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5301EE55-7CDF-4E6E-AE93-B5B525F170F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5301EE55-7CDF-4E6E-AE93-B5B525F170F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5301EE55-7CDF-4E6E-AE93-B5B525F170F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADD7721-A901-48C2-A012-1799720D457A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADD7721-A901-48C2-A012-1799720D457A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADD7721-A901-48C2-A012-1799720D457A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADD7721-A901-48C2-A012-1799720D457A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07AEAF3-AA86-4E03-BE91-60158488E8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07AEAF3-AA86-4E03-BE91-60158488E8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07AEAF3-AA86-4E03-BE91-60158488E8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07AEAF3-AA86-4E03-BE91-60158488E8E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90FAC5D8-C5CF-46A2-87F2-2DF24933EC62} = {590F83E5-1C84-4EAD-9063-95B88D7AA098}
+		{5301EE55-7CDF-4E6E-AE93-B5B525F170F3} = {3B8C1E15-28AB-417B-97C1-D5100EC84D5C}
+		{CADD7721-A901-48C2-A012-1799720D457A} = {590F83E5-1C84-4EAD-9063-95B88D7AA098}
+		{F07AEAF3-AA86-4E03-BE91-60158488E8E7} = {590F83E5-1C84-4EAD-9063-95B88D7AA098}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FF690EB-7D3D-46DF-8156-F299C90B57B3}
